@@ -1,10 +1,10 @@
 import React from "react";
-import countryCard from "./Components/Card";
-
+// import CountryCard from "./Components/Card.jsx";
+const CountryCard = React.lazy(() => import('./Components/Test.jsx'));
 function App() {
   return (
     <>
-      <countryCard />
+      <CountryCard />
     </>
   );
 }
